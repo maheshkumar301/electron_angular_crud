@@ -1,0 +1,10 @@
+<!-- app.component.html -->
+<div style="text-align:center; margin-top: 50px;">
+  <h1>File Operations</h1>
+  <input [(ngModel)]="filePath" placeholder="File Path" style="margin:10px;"/><br/>
+  <textarea [(ngModel)]="fileContent" placeholder="File Content" rows="10" cols="30" style="margin:10px;"></textarea><br/>
+  <button (click)="createFile()" style="margin:3px;">Create File</button>
+  <button (click)="readFile()"  style="margin:3px;">Read File</button>
+  <button (click)="updateFile()"  style="margin:3px;">Update File</button>
+  <button (click)="deleteFile()"  style="margin:3px;">Delete File</button>
+</div>
